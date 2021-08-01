@@ -109,3 +109,6 @@ dmypy.json
 # Media & Static files
 staticfiles/
 mediafiles/
+
+# Postgres
+.pgdata/

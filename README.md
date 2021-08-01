@@ -1,6 +1,6 @@
-# <project>
+# Django Testing
 
-Descrição
+Projeto para testes.
 
 ## Como desenvolver?
 
@@ -12,28 +12,10 @@ Descrição
 6. Execute os testes.
 
 ```console
-git clone git@github.com:niltonpimentel02/<project>.git <project>
+git clone git@github.com:niltonpimentel02/django_testing.git django_testing
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp contrib/env-sample .env
 pytest
-```
-
-## Como fazer deploy?
-
-1. Crie uma instância Heroku.
-2. Envie as configurações para o Heroku.
-3. Defina uma SECRET_KEY segura para a instância.
-4. Defina DEBUG=False.
-5. Configure o serviço de email.
-6. Envie o código para o Heroku.
-
-```console
-heroku create <project>
-heroku config:push
-heroku config:set SECRET_KEY=`python contrib/secret_gen.py`  
-heroku config:set DEBUG=False  
-# configuro o email  
-git push heroku master --force  
 ```
